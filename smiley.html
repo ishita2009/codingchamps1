@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMILEY</title>
+	<style type="text/css">
+		body
+		{
+			animation-name: move;
+		    animation-duration: 3s;
+		    animation-direction: alternate;
+		    animation-iteration-count: infinite;
+		    background-color: cyan;
+		}
+		@keyframes move
+		{
+			100%
+			{
+				margin-left: 1100px;
+			}
+		}
+		.antenna
+		{
+			width: 250px;
+			height: 20px;
+			background-color: pink;
+			border-style: solid;
+		    border-width: 1px;
+		    animation-name: rotate;
+		    animation-duration: 3s;
+		    animation-direction: alternate;
+		    animation-iteration-count: infinite;
+		}
+		@keyframes rotate
+		{
+			100%
+			{
+				transform: rotateY(360deg);
+			}
+		}
+		.line
+		{
+			width: 20px;
+			height: 30px;
+			background-color: black;
+			border-style: solid;
+			border-width: 1px;
+			margin-left: 115px;
+		}
+		.face
+		{
+			width: 240px;
+			height: 240px;
+			background-color: brown;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 1px;
+			margin-left: 5px;
+			position: absolute;
+		}
+		.leye
+		{
+			position: relative;
+			left: 50px;
+			top: 20px;
+			width: 40px;
+			height: 40px;
+			border-style: solid;
+			border-width: 1px;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.reye
+		{
+			position: relative;
+			left: 105px;
+			bottom: 20px;
+			width: 40px;
+			height: 40px;
+			border-style: solid;
+			border-width: 1px;
+			background-color: white;
+			border-radius: 50%;
+		}
+		.mouth
+		{
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			border-style: solid;
+			border-width: 1px;
+			background-color: pink;
+			position: relative;
+			left: 54px;
+			bottom: 10px;
+		}
+		.eye
+		{
+			position: relative;
+			left: 16px;
+			top: 25px;
+			width: 15px;
+			height: 15px;
+			background-color: black;
+			border-radius: 50%;
+			animation-name: rotateabc;
+		    animation-duration: 2s;
+		    animation-direction: alternate;
+		    animation-iteration-count: infinite;
+		    animation-direction: alternate-reverse;
+		}
+		@keyframes rotateabc
+		{
+			100%
+			{
+				top: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="antenna"></div>
+	<div class="line"></div>
+	<div class="face">
+		<div class="leye">
+			<div class="eye"></div>
+		</div>
+		<div class="reye">
+			<div class="eye"></div>
+		</div>
+		<div class="mouth"></div>
+	</div>
+</body>
+</html>
